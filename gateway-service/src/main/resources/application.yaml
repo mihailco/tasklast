@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+
+zuul:
+  prefix: /api
+  routes:
+    person:
+      path: /persons/**
+      service-id: person-service
+  ignored-services: "*"
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: true
+
