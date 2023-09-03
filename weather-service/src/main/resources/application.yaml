@@ -2,6 +2,13 @@ server:
   port: 0
 
 spring:
+
+  cache:
+    caffeine:
+      spec: expireAfterWrite=1m
+    type: simple
+    cache-names: weathers
+
   application:
     name: weather-service
 
@@ -12,7 +19,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-appid: 4f655eb9ab5391ab279f449c1ca4291d
+appid: d68292891fafb2a9ce37d00a676075cb
+
 
 url:
   weather: https://api.openweathermap.org/data/2.5/weather
+

@@ -1,3 +1,40 @@
+GET http://localhost/weather-service?lon=45.1749&lat=54.1838
+
+<> 2023-09-03T183318.500.json
+
+###
+
+GET http://localhost/weather-service?lon=45.1749&lat=54.1838
+
+<> 2023-09-03T183237.500.json
+
+###
+
+GET http://localhost/weather-service?lon=45.1749&lat=54.1838
+
+<> 2023-09-03T183229.500.json
+
+###
+
+GET http://localhost/weather-service?lon=45.1749&lat=54.1838
+
+<> 2023-09-03T183226.500.json
+
+###
+
+POST http://localhost/location-service
+Content-Type: application/json
+
+{
+  "lon": 45.1749,
+  "lat": 54.1838,
+  "name": "Saransk"
+}
+
+<> 2023-09-03T183221.400.txt
+
+###
+
 GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=4f655eb9ab5391ab279f449c1ca4291d
 
 ###
@@ -275,36 +312,6 @@ Content-Type: application/json
 GET http://localhost/weather-service?lon=45.1749&lat=54.1838
 
 <> 2023-09-03T173705.500.json
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=4f655eb9ab5391ab279f449c1ca4291d
-
-<> 2023-09-03T173626.200.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T173533.500.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T173530.404.json
-
-###
-
-GET http://localhost/weather-service?lon=45.1749&lat=54.1838
-
-<> 2023-09-03T173525.404.json
-
-###
-
-GET http://localhost/weather-service?lon=45.1749&lat=54.1838
-
-<> 2023-09-03T173523.404.json
 
 ###
 

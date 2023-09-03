@@ -6,6 +6,7 @@ import com.example.weatherservice.model.Main;
 import com.example.weatherservice.model.Root;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -20,6 +21,7 @@ public class WeatherService {
     @Value("${url.weather}")
     String weatherUrl;
 
+    @Cacheable(value = "weathers", key = "#lon + ';' + #lat")
     public Main getWeatherByCord(String lon, String lat){
         String url = String.format("%s?lat=%s&lon=%s&units=metric&appid=%s", weatherUrl, lat, lon, appId);
         Root t = null;
