@@ -20,6 +20,6 @@ public class GeodataService {
     }
 
     public Geodata getByName(String cityName) {
-        return geodataRepository.findByName(cityName);
+        return geodataRepository.findByName(cityName).get();
     }
 }
