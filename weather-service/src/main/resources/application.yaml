@@ -2,13 +2,6 @@ server:
   port: 0
 
 spring:
-
-  cache:
-    caffeine:
-      spec: expireAfterWrite=1m
-    type: simple
-    cache-names: weathers
-
   application:
     name: weather-service
 
