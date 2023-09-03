@@ -1,0 +1,18 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: weather-service
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+appid: 4f655eb9ab5391ab279f449c1ca4291d
+
+url:
+  weather: https://api.openweathermap.org/data/2.5/weather
