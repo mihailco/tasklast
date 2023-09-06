@@ -17,4 +17,5 @@ public class PersonEntity {
    private String surname;
    private String lastname;
    private LocalDate birthday;
+   private String location;
 }

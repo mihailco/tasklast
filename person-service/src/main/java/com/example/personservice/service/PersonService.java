@@ -27,4 +27,14 @@ public class PersonService {
    public void deletePerson(long id) {
       personRepository.deleteById(id);
    }
+
+    public boolean existsById(Long id) {
+      return personRepository.existsById(id);
+    }
+
+   public PersonEntity findById(Long id) {
+
+      return personRepository.findById(id).get();
+   }
+
 }

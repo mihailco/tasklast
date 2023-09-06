@@ -1,143 +1,132 @@
-POST http://localhost/location-service
-Content-Type: application/json
+GET http://localhost/person-service/1/weather
 
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192629.200.json
+<> 2023-09-06T173112.200.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192627.500.json
+<> 2023-09-06T173109.200.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192626.500.json
+<> 2023-09-06T173105.200.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192625.500.json
+<> 2023-09-06T173007.500.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192623.500.json
+<> 2023-09-06T173002.500.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192622.500.json
+<> 2023-09-06T172808.500.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192621.500.json
+<> 2023-09-06T172806.500.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192620.500.json
+<> 2023-09-06T172734.500.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192618.500.json
+<> 2023-09-06T172729.500.json
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
+GET http://localhost/location-service/weather?location=Saransk
 
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192617.500.json
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192615.500.json
+<> 2023-09-06T172726.200.json
 
 ###
 
@@ -150,340 +139,276 @@ Content-Type: application/json
   "name": "Saransk"
 }
 
-<> 2023-09-03T192614.500.json
+<> 2023-09-06T172722.200.json
 
 ###
 
-POST http://localhost/location-service
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172301.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172258.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172256.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172254.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172250.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172248.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172247.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172245.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172242.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172240.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172238.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172236.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172234.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172232.404.txt
+
+###
+
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192613.500.json
+<> 2023-09-06T172228.200.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192610.500.json
+<> 2023-09-06T172225.200.json
 
 ###
 
-POST http://localhost/location-service
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192608.500.json
+<> 2023-09-06T172223.200.json
 
 ###
 
-POST http://localhost/location-service
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172208.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172206.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172202.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172200.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172151.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172149.200.json
+
+###
+
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192607.500.json
+<> 2023-09-06T172146.200.json
 
 ###
 
-POST http://localhost/location-service
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172137.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172132.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172130.200.json
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172127.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172124.404.txt
+
+###
+
+GET http://localhost/person-service/1/weather
+
+<> 2023-09-06T172118.200.json
+
+###
+
+POST http://localhost/person-service
 Content-Type: application/json
 
 {
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
 }
 
-<> 2023-09-03T192605.500.json
+<> 2023-09-06T172045.200.json
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
+GET http://localhost/person-service/1/weather
 
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192604.500.json
+<> 2023-09-06T172035.404.txt
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192602.500.json
+GET http://localhost/person-service/1/weather
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192600.500.json
+GET http://localhost/person-service/1/weather
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
+GET http://localhost/person-service/1/weather
 
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192558.500.json
+<> 2023-09-06T171913.200.json
 
 ###
 
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192553.500.json
+GET http://localhost/person-service/1/weather
 
 ###
 
-GET http://localhost/weather-service?lon=45.1749&lat=54.1838
-
-<> 2023-09-03T192242.200.json
+GET http://localhost/person-service/1/weather
 
 ###
 
-GET http://localhost/location-service?city=Saransk
+GET http://localhost/person-service/1/weather
 
-<> 2023-09-03T192236.500.json
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192230.500.json
+<> 2023-09-06T171904.200.json
 
 ###
 
-GET http://localhost/location-service?city=Saransk
-
-<> 2023-09-03T192130.200.json
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192056.400.txt
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192051.400.txt
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T192049.200.json
-
-###
-
-POST http://localhost/location-service
-Content-Type: application/json
-
-{
-  "lon": 45.1749,
-  "lat": 54.1838,
-  "name": "Saransk"
-}
-
-<> 2023-09-03T191838.400.txt
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=d68292891fafb2a9ce37d00a676075cb
-
-<> 2023-09-03T190925.200.json
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=d68292891fafb2a9ce37d00a676075cb
-
-<> 2023-09-03T190920.200.json
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=d68292891fafb2a9ce37d00a676075cb
-
-<> 2023-09-03T190919.200.json
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=d68292891fafb2a9ce37d00a676075cb
-
-<> 2023-09-03T190917.200.json
-
-###
-
-GET https://api.openweathermap.org/data/2.5/weather?lat=54.1838&lon=45.1749&units=metric&appid=d68292891fafb2a9ce37d00a676075cb
-
-<> 2023-09-03T190915.200.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190912.200.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190910.200.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190909.200.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190903.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190900.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190858.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190857.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190855.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190853.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190851.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190846.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190844.404.json
-
-###
-
-GET http://localhost/weather-service/city?cityName=Saransk
-
-<> 2023-09-03T190810.200.json
-
-###
-
-GET http://localhost/weather-service?lon=45.1749&lat=54.1838
-
-<> 2023-09-03T190807.200.json
-
-###
-
-GET http://localhost/weather-service?lon=45.1749&lat=54.1838
-
-<> 2023-09-03T190805.200.json
+GET http://localhost/person-service/1/weather
 
 ###
 

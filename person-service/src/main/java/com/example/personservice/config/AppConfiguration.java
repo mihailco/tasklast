@@ -1,4 +1,4 @@
-package com.example.weatherservice.config;
+package com.example.personservice.config;
 
 import com.google.common.cache.CacheBuilder;
 import lombok.NonNull;
@@ -19,20 +19,5 @@ public class AppConfiguration {
     @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
-    }
-
-    @Bean()
-    public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager() {
-            @Override
-            protected @NonNull Cache createConcurrentMapCache(String name) {
-                return new ConcurrentMapCache(
-                        name,
-                        CacheBuilder.newBuilder()
-                                .expireAfterWrite(1, TimeUnit.MINUTES)
-                                .build().asMap(),
-                        false);
-            }
-        };
     }
 }
