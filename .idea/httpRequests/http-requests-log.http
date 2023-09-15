@@ -1,3 +1,251 @@
+PUT http://localhost/person-service/2
+Content-Type: application/json
+
+{
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+<> 2023-09-15T220137.200.txt
+
+###
+
+GET http://localhost/person-service/
+
+<> 2023-09-15T220124.200.json
+
+###
+
+PUT http://localhost/person-service/1
+Content-Type: application/json
+
+{
+"id" : 2,
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+<> 2023-09-15T213932.200.txt
+
+###
+
+POST http://localhost/person-service
+Content-Type: application/json
+
+{
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
+}
+
+<> 2023-09-15T213928.200.json
+
+###
+
+POST http://localhost/person-service
+Content-Type: application/json
+
+{
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
+}
+
+<> 2023-09-15T213926.200.json
+
+###
+
+PUT http://localhost/person-service/1
+Content-Type: application/json
+
+{
+"id" : 2,
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+<> 2023-09-15T213904.404.json
+
+###
+
+POST http://localhost/person-service
+Content-Type: application/json
+
+{
+  "firstname": "Василий",
+  "surname": "Викторович",
+  "lastname": "Петрушин",
+  "birthday": "2001-01-01",
+  "location": "Saransk"
+}
+
+<> 2023-09-15T213901.404.json
+
+###
+
+PUT http://localhost/person-service/1
+Content-Type: application/json
+
+{
+"id" : 2,
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+<> 2023-09-15T213855.404.json
+
+###
+
+PUT http://localhost/person-service/1
+Content-Type: application/json
+
+{
+"id" : 2,
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+<> 2023-09-15T212928.500.json
+
+###
+
+PUT http://localhost:13335/1
+Content-Type: application/json
+
+{
+"id" : 2,
+"firstname" : "ffsafsa",
+"surname" : "sadfsa",
+"lastname" : "afasfa",
+"birthday" : "2023-09-11",
+"location" : "Луховка"
+}
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T231458.400.json
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T231051.400.json
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T230958.400.json
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T230955.400.json
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T230554.400.json
+
+###
+
+POST https://p.mrsu.ru/OAuth/Token
+Content-Type: application/json
+
+{
+ "grant_type": "password" ,
+ "client_id": "8" ,
+ "client_secret": "qweasd" ,
+ "username": "mihail.egorov.03@list.ru" ,
+ "password": "654321" ,
+ "scope": ""
+}
+
+<> 2023-09-14T230550.400.json
+
+###
+
+GET http://p.mrsu.ru/oauth/token?email=mihail.egorov.03@list.ru&password=654321
+
+<> 2023-09-14T215002.400.json
+
+###
+
 GET http://localhost/person-service/1/weather
 
 <> 2023-09-06T173112.200.json
@@ -299,116 +547,6 @@ GET http://localhost/person-service/1/weather
 GET http://localhost/person-service/1/weather
 
 <> 2023-09-06T172151.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172149.200.json
-
-###
-
-POST http://localhost/person-service
-Content-Type: application/json
-
-{
-  "firstname": "Василий",
-  "surname": "Викторович",
-  "lastname": "Петрушин",
-  "birthday": "2001-01-01",
-  "location": "Saransk"
-}
-
-<> 2023-09-06T172146.200.json
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172137.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172132.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172130.200.json
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172127.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172124.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172118.200.json
-
-###
-
-POST http://localhost/person-service
-Content-Type: application/json
-
-{
-  "firstname": "Василий",
-  "surname": "Викторович",
-  "lastname": "Петрушин",
-  "birthday": "2001-01-01",
-  "location": "Saransk"
-}
-
-<> 2023-09-06T172045.200.json
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T172035.404.txt
-
-###
-
-GET http://localhost/person-service/1/weather
-
-###
-
-GET http://localhost/person-service/1/weather
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T171913.200.json
-
-###
-
-GET http://localhost/person-service/1/weather
-
-###
-
-GET http://localhost/person-service/1/weather
-
-###
-
-GET http://localhost/person-service/1/weather
-
-<> 2023-09-06T171904.200.json
-
-###
-
-GET http://localhost/person-service/1/weather
 
 ###
 

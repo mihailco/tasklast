@@ -14,8 +14,9 @@ import java.time.LocalDate;
 public interface PersonRepository extends CrudRepository<PersonEntity, Long> {
    @Modifying
    @Transactional
-   @Query("update PersonEntity set lastname = :ln, birthday = :bd, surname = :sn, firstname = :fn where id = :id")
+   @Query("update PersonEntity set lastname = :#{#ln}, birthday = :#{#bd}, surname = :#{#sn}, firstname = :#{#fn} where id = :#{#id}")
    void modifyById(@Param("id") long id, @Param("fn") String firstname,
                    @Param("ln") String lastname, @Param("sn") String surname,
                    @Param("bd") LocalDate birthday);
+
 }
