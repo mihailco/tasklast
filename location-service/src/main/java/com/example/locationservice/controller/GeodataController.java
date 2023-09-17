@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import static org.springframework.http.HttpStatus.OK;
+
 @RestController
 public class GeodataController {
     @Autowired
@@ -31,6 +33,11 @@ public class GeodataController {
         }
     }
 
+    @GetMapping("/cities")
+    public ResponseEntity<?> getAll() {
+        return new ResponseEntity<>(geodataService.getAll(), OK);
+    }
+
     @GetMapping
     public ResponseEntity<?> getCord(@RequestParam String city) {
         return new ResponseEntity<>(geodataService.getByName(city), HttpStatus.OK);
@@ -41,5 +48,23 @@ public class GeodataController {
         Geodata geodata = geodataService.getByName(location);
         String url = String.format("%s/?lat=%s&lon=%s", weatherServiceUrl, geodata.getLat(), geodata.getLon());
         return restTemplate.getForObject(url, Weather.class);
+    }
+
+    @PutMapping("/{name}")
+    public ResponseEntity<?> updateGeodata(@PathVariable String name, @RequestBody Geodata geodata) {
+
+        try {
+            return new ResponseEntity<>(geodataService.updateGeodata(name, geodata), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @DeleteMapping("/{name}")
+    public ResponseEntity<?> deleteLocation(@PathVariable String name) {
+        if (geodataService.deleteGeo(name) == 0) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>("deleted", OK);
     }
 }

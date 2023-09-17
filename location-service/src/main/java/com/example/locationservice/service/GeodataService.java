@@ -2,12 +2,8 @@ package com.example.locationservice.service;
 
 import com.example.locationservice.entity.Geodata;
 import com.example.locationservice.repository.GeodataRepository;
-import jakarta.ws.rs.core.GenericEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 public class GeodataService {
@@ -21,5 +17,17 @@ public class GeodataService {
 
     public Geodata getByName(String cityName) {
         return geodataRepository.findByName(cityName).get();
+    }
+
+    public long deleteGeo(String name) {
+         return geodataRepository.deleteByName(name);
+    }
+
+    public Iterable<Geodata> getAll() {
+        return geodataRepository.findAll();
+    }
+
+    public long updateGeodata(String name, Geodata geodata){
+        return geodataRepository.update(name, geodata);
     }
 }

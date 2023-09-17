@@ -8,33 +8,33 @@ import org.springframework.stereotype.Service;
 @Service
 public class PersonService {
 
-   @Autowired
-   PersonRepository personRepository;
+    @Autowired
+    PersonRepository personRepository;
 
 
-   public PersonEntity save(PersonEntity person) {
-      return personRepository.save(person);
-   }
-
-   public Iterable<PersonEntity> getAll() {
-      return personRepository.findAll();
-   }
-
-   public void modifyUser(long id, PersonEntity person) {
-      personRepository.modifyById(id, person.getFirstname(), person.getLastname(), person.getSurname(), person.getBirthday());
-   }
-
-   public void deletePerson(long id) {
-      personRepository.deleteById(id);
-   }
-
-    public boolean existsById(Long id) {
-      return personRepository.existsById(id);
+    public PersonEntity save(PersonEntity person) {
+        return personRepository.save(person);
     }
 
-   public PersonEntity findById(Long id) {
+    public Iterable<PersonEntity> getAll() {
+        return personRepository.findAll();
+    }
 
-      return personRepository.findById(id).get();
-   }
+    public void modifyUser(long id, PersonEntity person) {
+        personRepository.modifyById(id, person.getFirstname(), person.getLastname(), person.getSurname(), person.getBirthday());
+    }
+
+    public int deletePerson(long id) {
+        return personRepository.deleteById(id);
+    }
+
+    public boolean existsById(Long id) {
+        return personRepository.existsById(id);
+    }
+
+    public PersonEntity findById(Long id) {
+
+        return personRepository.findById(id).get();
+    }
 
 }

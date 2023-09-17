@@ -8,7 +8,7 @@ spring:
   application:
     name: location-service
   datasource:
-    url: jdbc:h2:file:./data/location
+    url: jdbc:h2:file:./data/location2
 
 
 

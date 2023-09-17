@@ -19,4 +19,6 @@ public interface PersonRepository extends CrudRepository<PersonEntity, Long> {
                    @Param("ln") String lastname, @Param("sn") String surname,
                    @Param("bd") LocalDate birthday);
 
+   int deleteById(long id);
+
 }

@@ -44,7 +44,9 @@ public class PersonController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletePerson(@PathVariable long id) {
-        personService.deletePerson(id);
+        if (personService.deletePerson(id)==0){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>("deleted", OK);
     }
 
