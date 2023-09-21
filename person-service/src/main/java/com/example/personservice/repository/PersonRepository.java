@@ -14,11 +14,12 @@ import java.time.LocalDate;
 public interface PersonRepository extends CrudRepository<PersonEntity, Long> {
    @Modifying
    @Transactional
-   @Query("update PersonEntity set lastname = :#{#ln}, birthday = :#{#bd}, surname = :#{#sn}, firstname = :#{#fn} where id = :#{#id}")
-   void modifyById(@Param("id") long id, @Param("fn") String firstname,
+   @Query("update PersonEntity set lastname = :#{#ln}, birthday = :#{#bd}, surname = :#{#sn}, firstname = :#{#fn}, location = :#{#city} where id = :#{#id}")
+   int modifyById(@Param("id") long id, @Param("fn") String firstname,
                    @Param("ln") String lastname, @Param("sn") String surname,
-                   @Param("bd") LocalDate birthday);
+                   @Param("bd") LocalDate birthday, @Param("city") String city);
 
-   int deleteById(long id);
-
+   @Transactional
+   @Modifying
+   int removeById(Long id);
 }

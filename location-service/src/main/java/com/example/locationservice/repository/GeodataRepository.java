@@ -16,7 +16,9 @@ public interface GeodataRepository extends CrudRepository<Geodata, Integer> {
 
     Optional<Geodata> findByName(@NonNull String name);
 
-    Integer deleteByName (String name);
+    @Transactional
+    @Modifying
+    int removeByName(String name);
 
     @Transactional
     @Modifying

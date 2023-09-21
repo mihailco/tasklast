@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
 @RestController
@@ -38,16 +39,18 @@ public class PersonController {
 
     @PutMapping("/{id}")
     public ResponseEntity<?> modifyPerson(@PathVariable long id, @RequestBody PersonEntity person) {
-        personService.modifyUser(id, person);
+        if (personService.modifyUser(id, person) == 0) {
+            return new ResponseEntity<>(NOT_FOUND);
+        }
         return new ResponseEntity<>("success", OK);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deletePerson(@PathVariable long id) {
-        if (personService.deletePerson(id)==0){
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        if (personService.deletePerson(id) == 0) {
+            return new ResponseEntity<>(NOT_FOUND);
         }
-        return new ResponseEntity<>("deleted", OK);
+        return new ResponseEntity<>( OK);
     }
 
     @GetMapping("/{id}/weather")

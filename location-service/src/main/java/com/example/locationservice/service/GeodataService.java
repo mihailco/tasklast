@@ -19,15 +19,15 @@ public class GeodataService {
         return geodataRepository.findByName(cityName).get();
     }
 
-    public long deleteGeo(String name) {
-         return geodataRepository.deleteByName(name);
+    public int deleteGeo(String name) {
+        return geodataRepository.removeByName(name);
     }
 
     public Iterable<Geodata> getAll() {
         return geodataRepository.findAll();
     }
 
-    public long updateGeodata(String name, Geodata geodata){
+    public long updateGeodata(String name, Geodata geodata) {
         return geodataRepository.update(name, geodata);
     }
 }

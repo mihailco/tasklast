@@ -20,12 +20,12 @@ public class PersonService {
         return personRepository.findAll();
     }
 
-    public void modifyUser(long id, PersonEntity person) {
-        personRepository.modifyById(id, person.getFirstname(), person.getLastname(), person.getSurname(), person.getBirthday());
+    public int modifyUser(long id, PersonEntity person) {
+       return personRepository.modifyById(id, person.getFirstname(), person.getLastname(), person.getSurname(), person.getBirthday(), person.getLocation());
     }
 
     public int deletePerson(long id) {
-        return personRepository.deleteById(id);
+       return personRepository.removeById(id);
     }
 
     public boolean existsById(Long id) {

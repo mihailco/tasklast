@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-import static org.springframework.http.HttpStatus.OK;
+import static org.springframework.http.HttpStatus.*;
 
 @RestController
 public class GeodataController {
@@ -63,7 +63,7 @@ public class GeodataController {
     @DeleteMapping("/{name}")
     public ResponseEntity<?> deleteLocation(@PathVariable String name) {
         if (geodataService.deleteGeo(name) == 0) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(NOT_FOUND);
         }
         return new ResponseEntity<>("deleted", OK);
     }
